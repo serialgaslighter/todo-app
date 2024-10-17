@@ -1,4 +1,5 @@
 import Todo from '@pages/Todo';
+import { TodosProvider } from './utils/TodoListContext.jsx';
 
 // Du kannst in diesem Projekt einfach über @components auf den Ordner src/components zugreifen.
 // somit kannst du mit '@components/deineDatei' importieren und musst nicht den ganzen Pfad schreiben.
@@ -12,7 +13,9 @@ function App() {
 
   return (
     <>
-      <Todo />
+      <TodosProvider>
+        <Todo />
+      </TodosProvider>
     </>
   )
 }

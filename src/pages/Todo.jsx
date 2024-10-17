@@ -19,36 +19,17 @@
     Dies ist aber nur eine Empfehlung und keine Pflicht.
 */
 
+import { Input } from "@components/Input.jsx";
+import { TodoList } from "../components/TodoList.jsx";
+
 const Todo = () => {
 
     return(
         <>
             <h1>Todo</h1>
 
-            <div>
-                <input type="text" placeholder="Add todo" />
-                <button>Add</button>
-            </div>
-
-            <div>
-                <ul>
-                    <li>
-                        <input type="checkbox" />
-                        <span>Todo 1</span>
-                        <button>Delete</button>
-                    </li>
-                    <li>
-                        <input type="checkbox" />
-                        <span>Todo 2</span>
-                        <button>Delete</button>
-                    </li>
-                    <li>
-                        <input type="checkbox" />
-                        <span>Todo 3</span>
-                        <button>Delete</button>
-                    </li>
-                </ul>
-            </div>
+            <Input />
+            <TodoList />
         </>
     )
 }
