@@ -1,0 +1,10 @@
+li {
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checked {
+  text-decoration: line-through;
+}

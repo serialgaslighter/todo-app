@@ -27,7 +27,6 @@ const Todo = () => {
     return(
         <>
             <h1>Todo</h1>
-
             <Input />
             <TodoList />
         </>
